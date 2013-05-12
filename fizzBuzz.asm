@@ -15,7 +15,8 @@ global _start
 _start:
         call main
         mov al, 1
-        mov bl, 0
+        ;mov bl, 0
+        xor bl,bl
         int 0x80
  
 main:
@@ -25,7 +26,8 @@ count_loop:
         mov BYTE [k], 0
        
         mov al, [i]
-        mov dl, 0
+        ;mov dl, 0
+        xor dl,dl
         mov ecx, 3
         idiv ecx
        
@@ -44,7 +46,8 @@ count_loop:
 no_fizz:
        
         mov al, [i]
-        mov dl, 0
+        ;mov dl, 0
+        xor dl,dl
         mov ecx, 5
         idiv ecx
        
@@ -93,7 +96,8 @@ print_number:
        
 number_loop:
         mov eax, [esp + 4]
-        mov dl, 0
+        ;mov dl, 0
+        xor dl,dl
         mov ecx, 10
         idiv ecx
        
