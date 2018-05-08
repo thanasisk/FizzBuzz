@@ -1,4 +1,4 @@
-// naive FizzBuzz in Golang
+// slightly optimized fizzBuzz in Golang
 // MIT License
 package main
 
