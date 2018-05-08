@@ -1,5 +1,5 @@
 // naive FizzBuzz in Golang
-// GPLv2
+// MIT License 
 package main
 
 import "fmt"
